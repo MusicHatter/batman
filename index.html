@@ -7,6 +7,7 @@
     <title>Бэтмен</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,7 +38,7 @@
                 <div class="movie-info">
                     <span class="tag">Фильм</span>
                     <span class="country">США, 2021 год</span>
-                    <a href="#" class="play-trailer">Смотреть трейлер</a>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg" class="play-trailer">Смотреть трейлер</a>
                 </div>
                 <a href="#" class="more">Подробнее</a>
             </div>
@@ -65,8 +66,8 @@
 
            <div class="full-info">
                <nav class="menu">
-                   <a href="#" class="menu-item menu-item-active">Описание</a>
-                   <a href="#" class="menu-item">Рецензии</a>
+                   <a href="#about" class="menu-item menu-item-active">Описание</a>
+                   <a href="#reviews" class="menu-item">Рецензии</a>
                    <a href="#" class="menu-item">Премьеры</a>
                    <a href="#" class="menu-item">Актеры</a>
                    <a href="#" class="menu-item">Награды</a>
@@ -78,7 +79,7 @@
                </nav>
 
                <div class="full-content">
-                    <div class="content-item">
+                    <div class="content-item visible" id="about">
                         <p class="text">
                             Предстоящий американский супергеройский фильм, основанный на одноимённых 
                             комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. 
@@ -112,6 +113,12 @@
                             станет главным злодеем фильма.
                         </p>
                     </div>
+                    <div class="content-item" id="reviews">
+                        123
+                    </div>
+                    <div class="content-item" id="cho-to">
+                         Тут скоро появятся реценцзии
+                     </div>
                     <div class="subscribe">
                         <span class="subscribe-title">Подпишитесь на обновления</span>
                         <form action="#" class="subscribe-form">
@@ -128,5 +135,8 @@
            </div>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
