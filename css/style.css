@@ -1,0 +1,119 @@
+/****************************
+
+        Common style
+
+****************************/
+
+
+body {
+    background-color: #0A090A;
+    
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/****************************
+
+        Header
+
+****************************/
+
+.main-header {
+    padding-top: 45px;
+}
+
+.container {
+    max-width: 1140px;
+
+    margin: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    margin-right: 50px;
+}
+
+.search {
+    display: flex;
+    flex-grow: 1;
+
+    align-items: center;
+}
+
+.search-input {
+    background-color: rgba(196, 196, 196, 0.5);
+    border: none;
+
+    padding: 15px 12px;
+
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 16px;
+    color: #AEAEAE;
+
+    flex-grow: 0.8;
+}
+
+.button-search {
+    background-color: inherit;
+    
+    border: none;
+}
+
+.button-search img {
+    width: 20px;
+    height: 20px;
+}
+
+.user-action {
+    display: flex;
+    align-items: center;
+}
+
+.bookmark {
+    background-color: inherit;
+    
+    border: none;
+}
+
+.bookmark img {
+    width: 12px;
+    height: 16px;
+}
+
+.user-photo {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
