@@ -203,6 +203,11 @@ input[type="radio"].visually-hidden {
     text-transform: none;
 }
 
+.play-trailer:hover,
+.play-trailer:focus {
+    text-decoration: none;
+}
+
 .play-trailer::before {
     content: "";
 
@@ -226,6 +231,11 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 
     text-transform: none;
+}
+
+.more:hover,
+.more:focus {
+    text-decoration: none;
 }
 
 .more::after {
@@ -292,6 +302,14 @@ input[type="radio"].visually-hidden {
     line-height: 16px;
 
     border: none;
+
+    cursor: pointer;
+}
+
+.button:active,
+.button:hover,
+.button:focus {
+    background: rgb(235, 113, 0);
 }
 
 .actors-title {
@@ -334,6 +352,11 @@ input[type="radio"].visually-hidden {
 
     font-size: 18px;
     line-height: 21px;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    color: #FF8F27;
 }
 
 .menu-item:last-child {
@@ -401,6 +424,14 @@ input[type="radio"].visually-hidden {
 
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+
+    cursor: pointer;
+}
+
+.subscribe-button:active,
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background: rgb(235, 113, 0);
 }
 
 /****************************
@@ -466,14 +497,17 @@ input[type="radio"].visually-hidden {
     .container {
         max-width: 90%;
     }
+
     .search {
         flex-basis: 100%;
         order: 3;
         margin-top: 5%;
     }
+
     .actors-list, .actors-title {
         display: none;
     }
+
     .short-info {
         margin-bottom: 5%;
         margin-right: 0;
@@ -481,10 +515,12 @@ input[type="radio"].visually-hidden {
         display: block;
         max-width: 100%;
     }
+    
     .play-trailer {
         flex-basis: 100%;
         margin-top: 10%;
     }
+
     .button {
         width: 100%;
     }
